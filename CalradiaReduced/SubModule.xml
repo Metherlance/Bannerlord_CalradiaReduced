@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+    <Name value="Calradia Reduced"/>
+    <Id value="CalradiaReduced"/>
+    <Version value="v1.2.11.0"/>
+	<Official value="false" />
+	<DefaultModule value="false" />
+    <ModuleCategory value="Singleplayer"/>
+    <ModuleType value="Community" />
+    <DependedModules>
+		<DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.3.3" />
+		<DependedModule Id="Sandbox" DependentVersion="v1.2.11"/>
+    </DependedModules>
+
+	<SubModules>
+		<SubModule>
+			<Name value="CalradiaReduced" />
+			<DLLName value="CalradiaReduced.dll" />
+			<SubModuleClassType value="CalradiaReduced.SubModule" />
+			<Tags />
+		</SubModule>
+	</SubModules>
+	<Xmls>	
+		<XmlNode>
+			<XmlName id="Factions" path="spclans" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Settlements" path="settlements" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+		<XmlName id="Heroes" path="heroes"/>
+		  <IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+			<GameType value = "CustomGame"/>
+		  </IncludedGameTypes>
+		</XmlNode>
+		
+	</Xmls>
+
+</Module>
